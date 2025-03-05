@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor's Prescription</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .header .doctor-info {
+            font-size: 14px;
+        }
+        .header .clinic-info {
+            text-align: right;
+            font-size: 14px;
+        }
+        .header .logo {
+            text-align: center;
+        }
+        .content {
+            margin-top: 20px;
+        }
+        .content .section {
+            margin-bottom: 20px;
+        }
+        .content .section h3 {
+            margin-bottom: 10px;
+            text-decoration: underline;
+            font-size: 16px;
+        }
+        .prescription-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .prescription-table th, .prescription-table td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+            font-size: 12px;
+        }
+        .prescription-table th {
+            background-color: #f2f2f2;
+        }
+        .advice {
+            font-size: 12px;
+            margin-top: 20px;
+        }
+        .footer {
+            margin-top: 50px;
+            text-align: right;
+            font-size: 12px;
+        }
+        .buttons {
+            margin-top: 20px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <div class="doctor-info">
+            <strong>Dr. {{doctor}}</strong><br>
+            MBBS <br>
+        </div>
+        <div class="logo">
+            <img src="logo.png" alt="Caduceus" style="height: 50px;">
+        </div>
+        <div class="clinic-info">
+            <strong>Belite Hospital</strong><br>
+            Main Road Thottinakara, Mampad-676542<br>
+            Ph: 09025226425, Timing: 09:00 AM - 02:00 PM,<br>
+            05:00 PM - 09:00 PM 
+        </div>
+    </div>
+
+    <!-- Patient and Diagnosis Details -->
+    <div class="content">
+        <div class="section">
+            <strong>Name:</strong> {{patientName}}<br>
+            <strong>Place:</strong> {{Place}}<br>
+            <strong>Age:</strong> {{Age}}<br>
+            <strong>Email:</strong> {{Email}}<br>
+            <strong>Address:</strong> {{Address}}<br>
+            <strong>Phone:</strong> {{Phone}}<br>
+            <strong>Date:</strong> {{Date}}<br>
+        </div>
+    </div>
+   
+</body>
+</html>
